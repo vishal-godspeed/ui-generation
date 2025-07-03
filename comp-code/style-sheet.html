@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Style Guide</title>
+  <link href="/css/style.css" rel="stylesheet" />
+</head>
+<body class="bg-gradient-to-br from-purple-500/30 via-pink-400/30 to-indigo-400/30 backdrop-blur-md min-h-screen text-white font-sans">
+  <div class="bg-dark min-h-screen">
+    <div class="container mx-auto py-10 space-y-16">
+      <h1 class="text-4xl font-bold mb-8">Style Guide - Initial Version</h1>
+
+      <!-- 🎨 Colors -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">🎨 Colors</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="p-4">
+            <div class="w-20 h-20 bg-primary-500 rounded-md"></div>
+            <p>Primary Color</p>
+          </div>
+          <div class="p-4">
+            <div class="w-20 h-20 bg-secondary-500 rounded-md"></div>
+            <p>Secondary Color</p>
+          </div>
+          <div class="p-4">
+            <div class="w-20 h-20 bg-muted-500 rounded-md"></div>
+            <p>Muted Color</p>
+          </div>
+          <div class="p-4">
+            <div class="w-20 h-20 bg-success-500 rounded-md"></div>
+            <p>Success Color</p>
+          </div>
+          <div class="p-4">
+            <div class="w-20 h-20 bg-error-500 rounded-md"></div>
+            <p>Error Color</p>
+          </div>
+          <div class="p-4">
+            <div class="w-20 h-20 bg-warning-500 rounded-md"></div>
+            <p>Warning Color</p>
+          </div>
+          <div class="p-4">
+            <div class="w-20 h-20 bg-info-500 rounded-md"></div>
+            <p>Info Color</p>
+          </div>
+          <div class="p-4">
+            <div class="w-20 h-20 bg-dark rounded-md"></div>
+            <p>Dark</p>
+          </div>
+          <div class="p-4">
+            <div class="w-20 h-20 bg-light rounded-md border border-gray-300"></div>
+            <p>Light</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🌈 Gradients -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">🌈 Gradients</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-4">
+            <div class="w-40 h-16 rounded-md bg-primary-gradient text-center flex items-center justify-center text-white font-semibold">Primary Gradient</div>
+          </div>
+          <div class="p-4">
+            <div class="w-40 h-16 rounded-md bg-secondary-gradient text-center flex items-center justify-center text-white font-semibold">Secondary Gradient</div>
+          </div>
+          <div class="p-4">
+            <div class="w-40 h-16 rounded-md bg-success-gradient text-center flex items-center justify-center text-white font-semibold">Success Gradient</div>
+          </div>
+          <div class="p-4">
+            <div class="w-40 h-16 rounded-md bg-info-gradient text-center flex items-center justify-center text-white font-semibold">Info Gradient</div>
+          </div>
+          <div class="p-4">
+            <div class="w-40 h-16 rounded-md bg-dark-gradient text-center flex items-center justify-center text-white font-semibold">Dark Gradient</div>
+          </div>
+          <div class="p-4">
+            <div class="w-40 h-16 rounded-md bg-error-gradient text-center flex items-center justify-center text-white font-semibold">Error Gradient</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🔘 Buttons -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">🔘 Buttons</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <h3 class="mb-2">Normal Buttons</h3>
+            <div class="space-y-4">
+              <button class="btn">Primary Button</button>
+              <p class="text-sm">This is the primary button style.</p>
+
+              <button class="btn bg-secondary-500 hover:bg-secondary-700">Secondary Button</button>
+              <p class="text-sm">This is the secondary button style.</p>
+
+              <button class="btn bg-muted-500 hover:bg-muted-700">Muted Button</button>
+              <p class="text-sm">This is the muted button style.</p>
+
+              <button class="btn" disabled>Disabled Button</button>
+              <p class="text-sm text-black">This is a disabled button.</p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="mb-2">Hover State of Buttons</h3>
+            <div class="space-y-4">
+              <button class="btn text-white">Primary Button</button>
+              <p class="text-sm">This is the primary button style.</p>
+
+              <button class="btn bg-secondary-500 hover:bg-secondary-700 text-white">Secondary Button</button>
+              <p class="text-sm">This is the secondary button style.</p>
+
+              <button class="btn bg-muted-500 hover:bg-muted-700 text-white">Muted Button</button>
+              <p class="text-sm">This is the muted button style.</p>
+
+              <button class="btn text-white" disabled>Disabled Button</button>
+              <p class="text-sm text-black">This is a disabled button.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 📝 Typography -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">📝 Typography</h2>
+        <h1 class="text-5xl font-heading">Heading 1</h1>
+        <h2 class="text-4xl font-heading">Heading 2</h2>
+        <h3 class="text-3xl font-heading">Heading 3</h3>
+        <h4 class="text-2xl font-heading">Heading 4</h4>
+        <h5 class="text-xl font-heading">Heading 5</h5>
+        <h6 class="text-lg font-heading">Heading 6</h6>
+        <p class="text-base">Paragraph / Body Text</p>
+        <p class="text-sm">Captions / Small Text</p>
+        <p class="text-base text-white">
+          This is a paragraph with <span class="text-primary-500 font-semibold">Highlighted</span> using the primary color.
+        </p>
+        <p class="text-base text-white">This is another paragraph with default white text.</p>
+        <a href="#" class="text-info-500 hover:text-info-700 underline">Link Example</a>
+      </section>
+
+      <!-- 🏷 Tags -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">🏷 Tags</h2>
+        <div class="space-x-3">
+          <span class="tag">Default</span>
+          <span class="tag bg-success-100 text-success-800">Success</span>
+          <span class="tag bg-error-100 text-error-800">Error</span>
+          <span class="tag bg-info-100 text-info-800">Info</span>
+        </div>
+      </section>
+
+      <!-- 📥 Form Elements -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">📥 Form Elements</h2>
+        <input type="text" class="rounded-md p-2 w-64 text-white bg-muted-800 placeholder:text-muted-300 focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Input Field" />
+      </section>
+    </div>
+  </div>
+</body>
+</html>

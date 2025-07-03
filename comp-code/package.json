@@ -1,0 +1,19 @@
+{
+  "name": "landing-page-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:tailwind": "npx @tailwindcss/cli -i ./css/tailwind.css -o ./css/style.css",
+    "build": "npm run build:tailwind",
+    "dev:tailwind": "npx @tailwindcss/cli -i ./css/tailwind.css -o ./css/style.css --watch -m",
+    "dev": "npm run dev:tailwind"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.8",
+    "tailwindcss": "^4.1.8"
+  }
+}

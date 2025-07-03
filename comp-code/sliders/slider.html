@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Coverflow Slider</title>
+  <link href="/css/style.css" rel="stylesheet">
+  <style>
+    @media (min-width: 768px) {
+      .coverflow-slide {
+        transition: transform 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.4s, box-shadow 0.4s;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        opacity: 0;
+        z-index: 1;
+        pointer-events: none;
+      }
+      .coverflow-slide.active {
+        transform: translateX(-50%) scale(1.05) rotateY(0deg) translateY(-10px);
+        opacity: 1;
+        z-index: 3;
+        pointer-events: auto;
+      }
+      .coverflow-slide.left {
+        transform: translateX(-180%) scale(0.92) rotateY(35deg) translateY(10px);
+        opacity: 0.7;
+        z-index: 2;
+        pointer-events: auto;
+      }
+      .coverflow-slide.right {
+        transform: translateX(80%) scale(0.92) rotateY(-35deg) translateY(10px);
+        opacity: 0.7;
+        z-index: 2;
+        pointer-events: auto;
+      }
+      .coverflow-slide.far-left, .coverflow-slide.far-right {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+    @media (max-width: 767px) {
+      .coverflow-slide {
+        position: static !important;
+        transform: none !important;
+        opacity: 1 !important;
+        z-index: 1 !important;
+        pointer-events: auto !important;
+        display: none;
+      }
+      .coverflow-slide.active {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-purple-500/30 via-pink-400/30 to-indigo-400/30 backdrop-blur-md min-h-screen flex flex-col">
+  <div class="bg-black min-h-screen flex flex-col">
+    <div class="w-full min-h-screen max-w-full mx-auto bg-[#f7f5f2] flex flex-col">
+      <!-- Header -->
+      <header class="flex items-center justify-between px-8 py-4 text-xs text-black">
+        <div class="flex items-center gap-2">
+          <span class="font-bold tracking-widest">S O R</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <button class="hidden md:block"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
+          <select class="bg-transparent outline-none">
+            <option>USD</option>
+            <option>EUR</option>
+          </select>
+          <a href="#" class="hover:underline">My Account</a>
+          <button><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3z"/></svg></button>
+        </div>
+      </header>
+      <!-- Title -->
+      <div class="text-center py-8">
+        <h1 class="text-3xl md:text-4xl font-serif font-medium mb-2">New Arrivals</h1>
+        <p class="text-gray-500 text-base">We aren't traditional, but we honor traditions</p>
+      </div>
+      <!-- Responsive/Cylindrical Slider -->
+      <div class="flex-1 flex flex-col items-center justify-start w-full px-2 sm:px-4 md:px-8">
+        <div class="w-full flex flex-col items-center">
+          <div id="slider" class="w-full flex flex-col items-center">
+            <div class="w-full flex justify-center relative min-h-[260px] md:min-h-[380px]">
+              <div class="relative w-full max-w-xs sm:max-w-sm md:max-w-2xl h-full" style="height:auto;">
+                <!-- Slides -->
+                <div class="coverflow-slide" data-index="0">
+                  <img src="/images/simg1.jpg" alt="Ulli Top" class="w-full h-56 sm:h-72 md:h-80 object-cover object-center rounded-2xl bg-gray-100" />
+                  <div class="p-4 bg-white rounded-b-2xl">
+                    <div class="font-medium">Ulli Top</div>
+                    <div class="text-gray-500 text-sm">$145.00</div>
+                  </div>
+                </div>
+                <div class="coverflow-slide" data-index="1">
+                  <img src="/images/simg2.jpg" alt="Hao Earrings" class="w-full h-56 sm:h-72 md:h-80 object-cover object-center rounded-2xl bg-gray-100" />
+                  <div class="p-4 bg-white rounded-b-2xl">
+                    <div class="font-medium">Hao Earrings</div>
+                    <div class="text-gray-500 text-sm">$25.00</div>
+                  </div>
+                </div>
+                <div class="coverflow-slide" data-index="2">
+                  <img src="/images/simg3.webp" alt="Diam Gauri Dress" class="w-full h-56 sm:h-72 md:h-80 object-cover object-center rounded-2xl bg-gray-100" />
+                  <div class="p-4 bg-white rounded-b-2xl">
+                    <div class="font-medium">Diam Gauri Dress</div>
+                    <div class="text-gray-500 text-sm">$185.00</div>
+                  </div>
+                </div>
+                <div class="coverflow-slide" data-index="3">
+                  <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80" alt="Kiu Earrings" class="w-full h-56 sm:h-72 md:h-80 object-cover object-center rounded-2xl bg-gray-100" />
+                  <div class="p-4 bg-white rounded-b-2xl">
+                    <div class="font-medium">Kiu Earrings</div>
+                    <div class="text-gray-500 text-sm">$135.00</div>
+                  </div>
+                </div>
+                <div class="coverflow-slide" data-index="4">
+                  <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Lina Dress" class="w-full h-56 sm:h-72 md:h-80 object-cover object-center rounded-2xl bg-gray-100" />
+                  <div class="p-4 bg-white rounded-b-2xl">
+                    <div class="font-medium">Lina Dress</div>
+                    <div class="text-gray-500 text-sm">$210.00</div>
+                  </div>
+                </div>
+                <div class="coverflow-slide" data-index="5">
+                  <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80" alt="Mira Top" class="w-full h-56 sm:h-72 md:h-80 object-cover object-center rounded-2xl bg-gray-100" />
+                  <div class="p-4 bg-white rounded-b-2xl">
+                    <div class="font-medium">Mira Top</div>
+                    <div class="text-gray-500 text-sm">$99.00</div>
+                  </div>
+                </div>
+                <div class="coverflow-slide" data-index="6">
+                  <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Rhea Earrings" class="w-full h-56 sm:h-72 md:h-80 object-cover object-center rounded-2xl bg-gray-100" />
+                  <div class="p-4 bg-white rounded-b-2xl">
+                    <div class="font-medium">Rhea Earrings</div>
+                    <div class="text-gray-500 text-sm">$55.00</div>
+                  </div>
+                </div>
+                <div class="coverflow-slide" data-index="7">
+                  <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80" alt="Zara Dress" class="w-full h-56 sm:h-72 md:h-80 object-cover object-center rounded-2xl bg-gray-100" />
+                  <div class="p-4 bg-white rounded-b-2xl">
+                    <div class="font-medium">Zara Dress</div>
+                    <div class="text-gray-500 text-sm">$175.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Navigation: flex, centered, just below image -->
+            <div class="w-full flex justify-center items-center gap-4 mt-4">
+              <button id="prevBtn" class="w-11 h-11 flex items-center justify-center bg-white rounded-full shadow hover:bg-gray-100 transition"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg></button>
+              <button id="nextBtn" class="w-11 h-11 flex items-center justify-center bg-white rounded-full shadow hover:bg-gray-100 transition"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Responsive/Cylindrical slider logic
+    const slides = Array.from(document.querySelectorAll('.coverflow-slide'));
+    let current = 0;
+    function updateSlider() {
+      const isDesktop = window.innerWidth >= 768;
+      slides.forEach((slide, idx) => {
+        slide.classList.remove('active', 'left', 'right', 'far-left', 'far-right');
+        if (isDesktop) {
+          // Desktop: coverflow effect
+          if (idx === current) {
+            slide.classList.add('active');
+          } else if (idx === (current - 1 + slides.length) % slides.length) {
+            slide.classList.add('left');
+          } else if (idx === (current + 1) % slides.length) {
+            slide.classList.add('right');
+          } else if (idx === (current - 2 + slides.length) % slides.length) {
+            slide.classList.add('far-left');
+          } else if (idx === (current + 2) % slides.length) {
+            slide.classList.add('far-right');
+          }
+        } else {
+          // Mobile: only show active
+          if (idx === current) {
+            slide.classList.add('active');
+          }
+        }
+      });
+    }
+    document.getElementById('prevBtn').onclick = () => {
+      current = (current - 1 + slides.length) % slides.length;
+      updateSlider();
+    };
+    document.getElementById('nextBtn').onclick = () => {
+      current = (current + 1) % slides.length;
+      updateSlider();
+    };
+    // Touch/drag support
+    let startX = 0, dragging = false;
+    const slider = document.getElementById('slider');
+    slider.addEventListener('mousedown', (e) => {
+      dragging = true;
+      startX = e.pageX;
+    });
+    slider.addEventListener('touchstart', (e) => {
+      dragging = true;
+      startX = e.touches[0].pageX;
+    });
+    window.addEventListener('mousemove', (e) => {
+      if (!dragging) return;
+      const dx = e.pageX - startX;
+      if (Math.abs(dx) > 50) {
+        if (dx < 0) {
+          current = (current + 1) % slides.length;
+        } else if (dx > 0) {
+          current = (current - 1 + slides.length) % slides.length;
+        }
+        updateSlider();
+        dragging = false;
+      }
+    });
+    window.addEventListener('touchmove', (e) => {
+      if (!dragging) return;
+      const dx = e.touches[0].pageX - startX;
+      if (Math.abs(dx) > 50) {
+        if (dx < 0) {
+          current = (current + 1) % slides.length;
+        } else if (dx > 0) {
+          current = (current - 1 + slides.length) % slides.length;
+        }
+        updateSlider();
+        dragging = false;
+      }
+    });
+    window.addEventListener('mouseup', () => dragging = false);
+    window.addEventListener('touchend', () => dragging = false);
+    window.addEventListener('resize', updateSlider);
+    updateSlider();
+  </script>
+</body>
+</html>

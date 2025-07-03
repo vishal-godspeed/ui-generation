@@ -1,0 +1,28 @@
+<div class="w-full max-w-2xl mx-auto bg-white rounded-2xl shadow p-6 md:p-10 flex flex-col gap-6">
+  <div class="flex flex-col gap-6">
+    <h2 class="text-2xl font-semibold text-gray-800">Business Description</h2>
+    <p class="text-gray-500 text-sm">Provide a detailed description of your business and select your sector.</p>
+    <form class="flex flex-col gap-4">
+      <label class="block">
+        <span class="block text-gray-700 font-medium mb-1">Detailed business description</span>
+        <textarea rows="5" placeholder="Describe your business, its mission, and what makes it unique..." class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </label>
+      <label class="block">
+        <span class="block text-gray-700 font-medium mb-1">Business sector</span>
+        <select class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option>Select sector</option>
+          <option>Technology</option>
+          <option>Healthcare</option>
+          <option>Finance</option>
+          <option>Retail</option>
+          <option>Education</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <button type="submit" class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg flex items-center justify-center gap-2 transition-colors">
+        Save & Continue
+        <span class="material-icons text-white text-base">arrow_forward</span>
+      </button>
+    </form>
+  </div>
+</div> 

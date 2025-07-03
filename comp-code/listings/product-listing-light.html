@@ -1,0 +1,188 @@
+<!-- Product Listing Light (Dashboard Style, Uniform Cards) -->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<link href="../../css/style.css" rel="stylesheet">
+<div class="min-h-screen bg-gray-100 py-8">
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-5 border-b border-gray-200 bg-white max-w-7xl mx-auto rounded-t-2xl shadow-sm">
+    <div>
+      <h1 class="text-2xl font-bold text-gray-900">My Stuff-</h1>
+      <div class="text-gray-400 text-sm">Let's Choose Your Option To Sale !</div>
+    </div>
+    <div class="flex items-center gap-3">
+      <input type="text" placeholder="Search" class="px-3 py-2 rounded-lg bg-gray-100 border border-gray-200 text-sm focus:ring-2 focus:ring-primary-500 outline-none">
+      <button class="flex items-center px-3 py-2 rounded-lg bg-gray-100 border border-gray-200 text-gray-700 hover:bg-gray-200 transition"><span class="material-icons mr-1">filter_list</span>Filters</button>
+    </div>
+  </header>
+  <div class="flex flex-col lg:flex-row gap-8 px-6 py-8 max-w-7xl mx-auto">
+    <!-- Product List -->
+    <section class="flex-1">
+      <div class="flex flex-wrap gap-2 mb-6">
+        <button class="px-4 py-2 rounded-lg bg-white border border-gray-200 font-medium text-gray-900 flex items-center shadow-sm hover:bg-gray-100 transition"><span class="material-icons mr-2">checkroom</span>Clothes</button>
+        <button class="px-4 py-2 rounded-lg bg-white border border-gray-200 font-medium text-gray-500 flex items-center shadow-sm hover:bg-gray-100 transition"><span class="material-icons mr-2">watch</span>Accessories</button>
+        <button class="px-4 py-2 rounded-lg bg-white border border-gray-200 font-medium text-gray-500 flex items-center shadow-sm hover:bg-gray-100 transition"><span class="material-icons mr-2">menu_book</span>Books</button>
+        <button class="px-4 py-2 rounded-lg bg-white border border-gray-200 font-medium text-gray-500 flex items-center shadow-sm hover:bg-gray-100 transition"><span class="material-icons mr-2">devices</span>Electronics</button>
+        <button class="px-4 py-2 rounded-lg bg-white border border-gray-200 font-medium text-gray-500 flex items-center shadow-sm hover:bg-gray-100 transition"><span class="material-icons mr-2">home</span>Home Goods</button>
+        <button class="px-4 py-2 rounded-lg bg-white border border-gray-200 font-medium text-red-500 flex items-center shadow-sm hover:bg-gray-100 transition"><span class="material-icons mr-2">shopping_cart</span>Ordered <span class="ml-2 bg-red-100 text-red-500 rounded-full px-2 py-0.5 text-xs">12</span></button>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Product Card Example -->
+        <div class="bg-white rounded-2xl border border-gray-200 p-5 flex flex-col h-full min-h-[370px] shadow-sm hover:shadow-lg transition-all group cursor-pointer">
+          <div class="flex flex-col flex-1">
+            <img src="https://via.placeholder.com/120x120" alt="White T-shirt" class="w-32 h-32 object-contain mx-auto mb-4 group-hover:scale-105 transition-transform">
+            <div class="font-semibold text-gray-900 mb-1 text-base text-center">White T-shirt</div>
+            <div class="text-xs text-gray-400 mb-1 text-center">Sold 12pcs &bull; Avail 12pcs</div>
+            <div class="flex items-center gap-2 mb-2 justify-center">
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>M</option></select>
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>Man</option></select>
+              <button class="w-6 h-6 rounded-full border border-gray-200 bg-gray-300"></button>
+            </div>
+            <div class="font-bold text-lg text-gray-900 mb-2 text-center">$49.3</div>
+          </div>
+          <button class="flex items-center justify-center mt-auto px-3 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition"><span class="material-icons mr-1">add_shopping_cart</span>Add to cart</button>
+        </div>
+        <div class="bg-white rounded-2xl border border-gray-200 p-5 flex flex-col h-full min-h-[370px] shadow-sm hover:shadow-lg transition-all group cursor-pointer">
+          <div class="flex flex-col flex-1">
+            <img src="https://via.placeholder.com/120x120" alt="Outer Hodie Flannel" class="w-32 h-32 object-contain mx-auto mb-4 group-hover:scale-105 transition-transform">
+            <div class="font-semibold text-gray-900 mb-1 text-base text-center">Outer Hodie Flannel</div>
+            <div class="text-xs text-gray-400 mb-1 text-center">Sold 12pcs &bull; Avail 12pcs</div>
+            <div class="flex items-center gap-2 mb-2 justify-center">
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>XL</option></select>
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>Unisex</option></select>
+              <button class="w-6 h-6 rounded-full border border-gray-200 bg-gray-400"></button>
+            </div>
+            <div class="font-bold text-lg text-gray-900 mb-2 text-center">$112.4</div>
+          </div>
+          <button class="flex items-center justify-center mt-auto px-3 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition"><span class="material-icons mr-1">add_shopping_cart</span>Add to cart</button>
+        </div>
+        <div class="bg-white rounded-2xl border border-gray-200 p-5 flex flex-col h-full min-h-[370px] shadow-sm hover:shadow-lg transition-all group cursor-pointer">
+          <div class="flex flex-col flex-1">
+            <img src="https://via.placeholder.com/120x120" alt="Denim Longslave" class="w-32 h-32 object-contain mx-auto mb-4 group-hover:scale-105 transition-transform">
+            <div class="font-semibold text-gray-900 mb-1 text-base text-center">Denim Longslave</div>
+            <div class="text-xs text-gray-400 mb-1 text-center">Sold 12pcs &bull; Avail 12pcs</div>
+            <div class="flex items-center gap-2 mb-2 justify-center">
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>M</option></select>
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>Man</option></select>
+              <button class="w-6 h-6 rounded-full border border-gray-200 bg-blue-200"></button>
+            </div>
+            <div class="font-bold text-lg text-gray-900 mb-2 text-center">$49.3</div>
+          </div>
+          <button class="flex items-center justify-center mt-auto px-3 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition"><span class="material-icons mr-1">add_shopping_cart</span>Add to cart</button>
+        </div>
+        <div class="bg-white rounded-2xl border border-gray-200 p-5 flex flex-col h-full min-h-[370px] shadow-sm hover:shadow-lg transition-all group cursor-pointer">
+          <div class="flex flex-col flex-1">
+            <img src="https://via.placeholder.com/120x120" alt="Wide Leg Dress Pants" class="w-32 h-32 object-contain mx-auto mb-4 group-hover:scale-105 transition-transform">
+            <div class="font-semibold text-gray-900 mb-1 text-base text-center">Wide Leg Dress Pants</div>
+            <div class="text-xs text-gray-400 mb-1 text-center">Sold 12pcs &bull; Avail 12pcs</div>
+            <div class="flex items-center gap-2 mb-2 justify-center">
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>28</option></select>
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>Women</option></select>
+              <button class="w-6 h-6 rounded-full border border-gray-200 bg-brown-200"></button>
+            </div>
+            <div class="font-bold text-lg text-gray-900 mb-2 text-center">$28.2</div>
+          </div>
+          <button class="flex items-center justify-center mt-auto px-3 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition"><span class="material-icons mr-1">add_shopping_cart</span>Add to cart</button>
+        </div>
+        <div class="bg-white rounded-2xl border border-gray-200 p-5 flex flex-col h-full min-h-[370px] shadow-sm hover:shadow-lg transition-all group cursor-pointer">
+          <div class="flex flex-col flex-1">
+            <img src="https://via.placeholder.com/120x120" alt="Dress For Women Muslim" class="w-32 h-32 object-contain mx-auto mb-4 group-hover:scale-105 transition-transform">
+            <div class="font-semibold text-gray-900 mb-1 text-base text-center">Dress For Women Muslim</div>
+            <div class="text-xs text-gray-400 mb-1 text-center">Sold 12pcs &bull; Avail 12pcs</div>
+            <div class="flex items-center gap-2 mb-2 justify-center">
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>M</option></select>
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>Man</option></select>
+              <button class="w-6 h-6 rounded-full border border-gray-200 bg-gray-700"></button>
+            </div>
+            <div class="font-bold text-lg text-gray-900 mb-2 text-center">$76.8</div>
+          </div>
+          <button class="flex items-center justify-center mt-auto px-3 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition"><span class="material-icons mr-1">add_shopping_cart</span>Add to cart</button>
+        </div>
+        <div class="bg-white rounded-2xl border border-gray-200 p-5 flex flex-col h-full min-h-[370px] shadow-sm hover:shadow-lg transition-all group cursor-pointer">
+          <div class="flex flex-col flex-1">
+            <img src="https://via.placeholder.com/120x120" alt="Trench Coat Notch Lapel" class="w-32 h-32 object-contain mx-auto mb-4 group-hover:scale-105 transition-transform">
+            <div class="font-semibold text-gray-900 mb-1 text-base text-center">Trench Coat Notch Lapel</div>
+            <div class="text-xs text-gray-400 mb-1 text-center">Sold 12pcs &bull; Avail 12pcs</div>
+            <div class="flex items-center gap-2 mb-2 justify-center">
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>M</option></select>
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>Man</option></select>
+              <button class="w-6 h-6 rounded-full border border-gray-200 bg-brown-700"></button>
+            </div>
+            <div class="font-bold text-lg text-gray-900 mb-2 text-center">$112.2</div>
+          </div>
+          <button class="flex items-center justify-center mt-auto px-3 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition"><span class="material-icons mr-1">add_shopping_cart</span>Add to cart</button>
+        </div>
+        <div class="bg-white rounded-2xl border border-gray-200 p-5 flex flex-col h-full min-h-[370px] shadow-sm hover:shadow-lg transition-all group cursor-pointer">
+          <div class="flex flex-col flex-1">
+            <img src="https://via.placeholder.com/120x120" alt="Classic Shirt" class="w-32 h-32 object-contain mx-auto mb-4 group-hover:scale-105 transition-transform">
+            <div class="font-semibold text-gray-900 mb-1 text-base text-center">Classic Shirt</div>
+            <div class="text-xs text-gray-400 mb-1 text-center">Sold 12pcs &bull; Avail 12pcs</div>
+            <div class="flex items-center gap-2 mb-2 justify-center">
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>L</option></select>
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>Man</option></select>
+              <button class="w-6 h-6 rounded-full border border-gray-200 bg-gray-200"></button>
+            </div>
+            <div class="font-bold text-lg text-gray-900 mb-2 text-center">$59.9</div>
+          </div>
+          <button class="flex items-center justify-center mt-auto px-3 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition"><span class="material-icons mr-1">add_shopping_cart</span>Add to cart</button>
+        </div>
+        <div class="bg-white rounded-2xl border border-gray-200 p-5 flex flex-col h-full min-h-[370px] shadow-sm hover:shadow-lg transition-all group cursor-pointer">
+          <div class="flex flex-col flex-1">
+            <img src="https://via.placeholder.com/120x120" alt="Summer Polo" class="w-32 h-32 object-contain mx-auto mb-4 group-hover:scale-105 transition-transform">
+            <div class="font-semibold text-gray-900 mb-1 text-base text-center">Summer Polo</div>
+            <div class="text-xs text-gray-400 mb-1 text-center">Sold 12pcs &bull; Avail 12pcs</div>
+            <div class="flex items-center gap-2 mb-2 justify-center">
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>M</option></select>
+              <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:ring-1 focus:ring-primary-500"><option>Man</option></select>
+              <button class="w-6 h-6 rounded-full border border-gray-200 bg-blue-400"></button>
+            </div>
+            <div class="font-bold text-lg text-gray-900 mb-2 text-center">$39.5</div>
+          </div>
+          <button class="flex items-center justify-center mt-auto px-3 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition"><span class="material-icons mr-1">add_shopping_cart</span>Add to cart</button>
+        </div>
+      </div>
+    </section>
+    <!-- Cart/Order Summary -->
+    <aside class="w-full lg:w-80 bg-white rounded-2xl border border-gray-200 p-6 flex flex-col mt-8 lg:mt-0 shadow sticky top-8 self-start">
+      <div class="flex items-center mb-6">
+        <div class="w-10 h-10 rounded-full bg-gray-200 mr-3"></div>
+        <div>
+          <div class="font-semibold text-gray-900 text-sm">Chasier 1</div>
+          <div class="text-xs text-gray-400">Maximillian M</div>
+          <div class="text-xs text-gray-300">ID: #1992327</div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="font-semibold text-gray-900 mb-2">List Order Product</div>
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-sm">
+            <img src="https://via.placeholder.com/32x32" class="w-8 h-8 rounded bg-gray-100 mr-2" alt="">
+            <div class="flex-1">
+              <div class="text-gray-900">White T-shirt</div>
+              <div class="text-xs text-gray-400">Size: M | Color: Gray</div>
+            </div>
+            <div class="font-semibold text-gray-900">$49.3</div>
+          </div>
+          <div class="flex items-center justify-between text-sm">
+            <img src="https://via.placeholder.com/32x32" class="w-8 h-8 rounded bg-gray-100 mr-2" alt="">
+            <div class="flex-1">
+              <div class="text-gray-900">Outer Hodie Flannel</div>
+              <div class="text-xs text-gray-400">Size: XL | Color: Black</div>
+            </div>
+            <div class="font-semibold text-gray-900">$112.4</div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="font-semibold text-gray-900 mb-2">Detail Payment</div>
+        <div class="flex justify-between text-sm text-gray-500"><span>Subtotal</span><span>$210.0</span></div>
+        <div class="flex justify-between text-sm text-gray-500"><span>Discount</span><span>-$10.0</span></div>
+        <div class="flex justify-between text-sm text-gray-500"><span>Sales Tax</span><span>$5.0</span></div>
+        <div class="flex justify-between text-base font-bold text-gray-900 mt-2"><span>Total Amount</span><span>$205.0</span></div>
+      </div>
+      <div class="flex items-center gap-2 mb-2">
+        <input type="text" placeholder="Discount" class="flex-1 px-3 py-2 rounded-lg bg-gray-100 border border-gray-200 text-sm focus:ring-2 focus:ring-primary-500 outline-none">
+        <button class="px-3 py-2 rounded-lg bg-green-600 text-white font-semibold hover:bg-green-700 transition">Cash</button>
+      </div>
+      <button class="w-full mt-2 px-3 py-2 rounded-lg bg-gray-900 text-white font-semibold hover:bg-gray-700 transition">Checkout</button>
+    </aside>
+  </div>
+</div> 

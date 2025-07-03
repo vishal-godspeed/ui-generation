@@ -1,0 +1,79 @@
+<div class="bg-white rounded-2xl shadow-lg p-6 w-full max-w-xl mx-auto">
+  <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-2">
+    <div class="flex items-center gap-3">
+      <h2 class="font-bold text-xl text-gray-900">Activity statistics</h2>
+      <div class="relative ml-2">
+        <button id="bubbleDropdownBtn" class="bg-blue-50 text-blue-700 px-3 py-1 rounded-lg text-sm font-medium flex items-center"> <span id="bubbleDropdownLabel">Week</span> <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></button>
+        <div id="bubbleDropdownMenu" class="absolute left-0 mt-2 w-28 bg-white rounded-lg shadow-lg py-1 z-10 hidden">
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50" data-value="Week">Week</button>
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50" data-value="Month">Month</button>
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50" data-value="Yearly">Yearly</button>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center gap-4 text-sm text-gray-500">
+      <span>Last date for <span class="font-semibold text-gray-700">28 Feb - 5 Mar 2023</span></span>
+    </div>
+  </div>
+  <div class="flex items-center gap-6 mb-2">
+    <span class="flex items-center gap-1 text-gray-700 text-sm"><span class="inline-block w-3 h-3 rounded-full bg-black"></span>Activity statistics</span>
+    <span class="flex items-center gap-1 text-red-500 text-sm"><span class="inline-block w-3 h-3 rounded-full bg-red-500"></span>Sale statistics</span>
+  </div>
+  <div class="w-full h-64">
+    <canvas id="bubbleChart"></canvas>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const bubbleData = {
+  Week: {
+    datasets: [
+      { label: 'Activity statistics', data: [{x:1,y:14,r:10},{x:2,y:16,r:12},{x:3,y:13,r:8},{x:4,y:17,r:14},{x:5,y:12,r:7},{x:6,y:11,r:6},{x:7,y:15,r:11}], backgroundColor: 'rgba(37, 99, 235, 0.7)' },
+      { label: 'Sale statistics', data: [{x:1,y:18,r:13},{x:2,y:17,r:10},{x:3,y:15,r:9},{x:4,y:18,r:15},{x:5,y:16,r:12},{x:6,y:14,r:8},{x:7,y:16,r:10}], backgroundColor: 'rgba(239, 68, 68, 0.7)' }
+    ]
+  },
+  Month: {
+    datasets: [
+      { label: 'Activity statistics', data: [{x:1,y:60,r:15},{x:2,y:70,r:18},{x:3,y:65,r:12},{x:4,y:80,r:20}], backgroundColor: 'rgba(37, 99, 235, 0.7)' },
+      { label: 'Sale statistics', data: [{x:1,y:75,r:17},{x:2,y:68,r:14},{x:3,y:72,r:13},{x:4,y:85,r:19}], backgroundColor: 'rgba(239, 68, 68, 0.7)' }
+    ]
+  },
+  Yearly: {
+    datasets: [
+      { label: 'Activity statistics', data: [{x:1,y:700,r:25},{x:2,y:800,r:28},{x:3,y:900,r:22},{x:4,y:950,r:30}], backgroundColor: 'rgba(37, 99, 235, 0.7)' },
+      { label: 'Sale statistics', data: [{x:1,y:850,r:27},{x:2,y:900,r:24},{x:3,y:950,r:23},{x:4,y:1000,r:29}], backgroundColor: 'rgba(239, 68, 68, 0.7)' }
+    ]
+  }
+};
+const bubbleCtx = document.getElementById('bubbleChart').getContext('2d');
+let bubbleChart = new Chart(bubbleCtx, {
+  type: 'bubble',
+  data: bubbleData['Week'],
+  options: {
+    responsive: true,
+    plugins: { legend: { display: false }, tooltip: { enabled: true } },
+    scales: {
+      x: { grid: { color: '#e5e7eb' }, title: { display: true, text: 'X', color: '#64748b', font: { family: 'inherit' } }, ticks: { color: '#64748b', font: { family: 'inherit' } } },
+      y: { grid: { color: '#e5e7eb' }, title: { display: true, text: 'Y', color: '#64748b', font: { family: 'inherit' } }, ticks: { color: '#64748b', font: { family: 'inherit' } } }
+    }
+  }
+});
+const bubbleDropdownBtn = document.getElementById('bubbleDropdownBtn');
+const bubbleDropdownMenu = document.getElementById('bubbleDropdownMenu');
+const bubbleDropdownLabel = document.getElementById('bubbleDropdownLabel');
+bubbleDropdownBtn.addEventListener('click', () => { bubbleDropdownMenu.classList.toggle('hidden'); });
+bubbleDropdownMenu.querySelectorAll('button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const value = btn.getAttribute('data-value');
+    bubbleDropdownLabel.textContent = value;
+    bubbleDropdownMenu.classList.add('hidden');
+    bubbleChart.data = bubbleData[value];
+    bubbleChart.update();
+  });
+});
+window.addEventListener('click', (e) => {
+  if (!bubbleDropdownBtn.contains(e.target) && !bubbleDropdownMenu.contains(e.target)) {
+    bubbleDropdownMenu.classList.add('hidden');
+  }
+});
+</script> 

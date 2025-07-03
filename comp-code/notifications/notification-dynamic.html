@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Notification</title>
+  <link href="../../css/style.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 p-6">
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+    <div class="flex items-center justify-between p-4 border-b">
+      <span class="font-semibold text-lg">Notifications</span>
+      <button id="markAllRead" class="text-blue-500 hover:underline text-sm">Mark all as read</button>
+    </div>
+    <ul id="notificationList" class="divide-y divide-gray-200">
+      <li class="flex items-start p-4 bg-blue-50">
+        <span class="inline-block w-3 h-3 bg-blue-500 rounded-full mt-2 mr-3"></span>
+        <div class="flex-1">
+          <p class="text-sm text-gray-800">New comment on your post</p>
+          <span class="text-xs text-gray-400">2 min ago</span>
+        </div>
+        <button class="ml-2 text-gray-400 hover:text-gray-700" title="Mark as read">&times;</button>
+      </li>
+      <li class="flex items-start p-4">
+        <span class="inline-block w-3 h-3 bg-gray-300 rounded-full mt-2 mr-3"></span>
+        <div class="flex-1">
+          <p class="text-sm text-gray-800">Your profile was updated</p>
+          <span class="text-xs text-gray-400">10 min ago</span>
+        </div>
+        <button class="ml-2 text-gray-400 hover:text-gray-700" title="Mark as read">&times;</button>
+      </li>
+      <li class="flex items-start p-4 bg-blue-50">
+        <span class="inline-block w-3 h-3 bg-blue-500 rounded-full mt-2 mr-3"></span>
+        <div class="flex-1">
+          <p class="text-sm text-gray-800">New follower: Jane Doe</p>
+          <span class="text-xs text-gray-400">1 hour ago</span>
+        </div>
+        <button class="ml-2 text-gray-400 hover:text-gray-700" title="Mark as read">&times;</button>
+      </li>
+    </ul>
+  </div>
+  <script>
+    document.getElementById('markAllRead').onclick = function() {
+      document.querySelectorAll('#notificationList li').forEach(li => {
+        li.classList.remove('bg-blue-50');
+        li.querySelector('span').classList.remove('bg-blue-500');
+        li.querySelector('span').classList.add('bg-gray-300');
+      });
+    };
+    document.querySelectorAll('#notificationList button').forEach(btn => {
+      btn.onclick = function(e) {
+        const li = e.target.closest('li');
+        li.classList.remove('bg-blue-50');
+        li.querySelector('span').classList.remove('bg-blue-500');
+        li.querySelector('span').classList.add('bg-gray-300');
+      };
+    });
+  </script>
+</body>
+</html> 

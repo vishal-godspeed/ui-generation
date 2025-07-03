@@ -1,4 +1,4 @@
-##Availabe Components List##
+## Availabe All Components List##
 cards
 comparision-tables
 contact-form

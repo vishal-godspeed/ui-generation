@@ -1,7 +1,7 @@
 ```yaml
 componentName: Product Listing Dark
-slug: listings-product-listing-dark
-category: Listings
+slug: product-listing-dark
+category: listings
 tags:
   - product
   - listing
@@ -9,15 +9,16 @@ tags:
 layout: product, listing, dark
 primaryUse: Product Listing Display
 responsive: true
-description: 
-  A dark-themed e-commerce product listing page with a stylish hero banner, product grid, and interactive cards. Perfect for fashion or retail stores seeking a modern, visually striking layout. 
+description: A dark-themed e-commerce product listing page with a stylish hero banner, product grid, and interactive cards. Perfect for fashion or retail stores seeking a modern, visually striking layout.
 uses: landing
 ```
+
 ---
+
 ```yaml
 componentName: Product Listing Light
-slug: listings-product-listing-light
-category: Listings
+slug: product-listing-light
+category: listings
 tags:
   - product
   - listing
@@ -25,24 +26,23 @@ tags:
 layout: product, listing, light
 primaryUse: Product Listing Display
 responsive: true
-description: 
-  A clean, light-themed product listing and dashboard page with filterable product cards, order summary, and checkout sidebar. Ideal for e-commerce dashboards and online shops. 
+description: A clean, light-themed product listing and dashboard page with filterable product cards, order summary, and checkout sidebar. Ideal for e-commerce dashboards and online shops.
 ```
+
 ---
+
 ```yaml
 componentName: Product Listing
-slug: listings-product-listing
-category: Listings
+slug: product-listing
+category: listings
 tags:
   - product
   - listing
 layout: product, listing
 primaryUse: Product Listing Display
 responsive: true
-description: 
-  A modern e-commerce product listing page featuring a responsive grid of product cards, integrated shopping cart, and search functionality. Includes interactive UI elements and is ideal for online stores or marketplaces. 
+description: A modern e-commerce product listing page featuring a responsive grid of product cards, integrated shopping cart, and search functionality. Includes interactive UI elements and is ideal for online stores or marketplaces.
 uses: landing
 ```
+
 ---
-
-

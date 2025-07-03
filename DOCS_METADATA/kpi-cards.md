@@ -1,20 +1,21 @@
 ```yaml
 componentName: Area Chart
-slug: kpi-cards-area-chart
-category: KPI Cards
+slug: area-chart
+category: kpi-cards
 tags:
   - kpi
   - chart
   - area
-description: 
-  An area chart KPI card visualizing activity and sales statistics over time, with selectable ranges. Clean, interactive, and ideal for dashboards or analytics pages. 
-uses: dashboard 
+description: An area chart KPI card visualizing activity and sales statistics over time, with selectable ranges. Clean, interactive, and ideal for dashboards or analytics pages.
+uses: dashboard
 ```
+
 ---
+
 ```yaml
 componentName: Bar Chart
-slug: kpi-cards-bar-chart
-category: KPI Cards
+slug: bar-chart
+category: kpi-cards
 tags:
   - kpi
   - chart
@@ -22,14 +23,15 @@ tags:
 layout: kpi, chart, bar
 primaryUse: KPI Chart Display
 responsive: true
-description: 
-  A bar chart KPI card visualizing activity and sales statistics over time, with selectable ranges. Clean, interactive, and ideal for dashboards or analytics pages. 
+description: A bar chart KPI card visualizing activity and sales statistics over time, with selectable ranges. Clean, interactive, and ideal for dashboards or analytics pages.
 ```
+
 ---
+
 ```yaml
 componentName: Bubble Chart
-slug: kpi-cards-bubble-chart
-category: KPI Cards
+slug: bubble-chart
+category: kpi-cards
 tags:
   - kpi
   - chart
@@ -37,15 +39,16 @@ tags:
 layout: kpi, chart, bubble
 primaryUse: KPI Chart Display
 responsive: true
-description: 
-  A bubble chart KPI card visualizing activity and sales statistics over selectable time ranges. Interactive, responsive, and ideal for dashboards or analytics pages. 
+description: A bubble chart KPI card visualizing activity and sales statistics over selectable time ranges. Interactive, responsive, and ideal for dashboards or analytics pages.
 uses: dashboard
 ```
+
 ---
+
 ```yaml
 componentName: Line Chart
-slug: kpi-cards-line-chart
-category: KPI Cards
+slug: line-chart
+category: kpi-cards
 tags:
   - kpi
   - chart
@@ -53,15 +56,16 @@ tags:
 layout: kpi, chart, line
 primaryUse: KPI Chart Display
 responsive: true
-description: 
-  A line chart KPI card visualizing activity and sales statistics over time, with selectable ranges. Clean, interactive, and ideal for dashboards or analytics pages. 
+description: A line chart KPI card visualizing activity and sales statistics over time, with selectable ranges. Clean, interactive, and ideal for dashboards or analytics pages.
 uses: dashboard
 ```
+
 ---
-```yaml
+
+````yaml
 componentName: Pie Chart
-slug: kpi-card-pie-chart
-category: KPI Cards
+slug: pie-chart
+category: kpi-card
 tags:
   - kpi
   - chart
@@ -69,14 +73,14 @@ tags:
 layout: kpi, chart, pie
 primaryUse: KPI Chart Display
 responsive: true
-description: 
-  A pie chart KPI card for visualizing proportions or categories in a dataset. Ideal for dashboards or analytics pages. 
-uses: dashboard 
+description:
+  A pie chart KPI card for visualizing proportions or categories in a dataset. Ideal for dashboards or analytics pages.
+uses: dashboard
 ---
 ```yaml
 componentName: Radar Chart
-slug: kpi-cards-radar-chart
-category: KPI Cards
+slug: radar-chart
+category: kpi-cards
 tags:
   - kpi
   - chart
@@ -84,15 +88,17 @@ tags:
 layout: kpi, chart, radar
 primaryUse: KPI Chart Display
 responsive: true
-description: 
-  A radar chart KPI card visualizing activity and sales statistics across multiple categories or time periods. Interactive, responsive, and perfect for dashboards or analytics. 
+description:
+  A radar chart KPI card visualizing activity and sales statistics across multiple categories or time periods. Interactive, responsive, and perfect for dashboards or analytics.
 uses: dashboard
-```
+````
+
 ---
+
 ```yaml
 componentName: Scatter Chart
-slug: kpi-cards-scatter-chart
-category: KPI Cards
+slug: scatter-chart
+category: kpi-cards
 tags:
   - kpi
   - chart
@@ -100,10 +106,7 @@ tags:
 layout: kpi, chart, scatter
 primaryUse: KPI Chart Display
 responsive: true
-description: 
-  A scatter chart KPI card visualizing activity and sales statistics over selectable time ranges. Interactive, responsive, and ideal for dashboards or analytics pages. 
+description: A scatter chart KPI card visualizing activity and sales statistics over selectable time ranges. Interactive, responsive, and ideal for dashboards or analytics pages.
 uses: dashboard
 ---
-
-
-
+```

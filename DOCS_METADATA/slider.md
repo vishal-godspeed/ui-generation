@@ -1,6 +1,6 @@
 ```yaml
 componentName: slider
-category: Sliders
+category: sliders
 tags:
   - coverflow
   - carousel
@@ -11,9 +11,8 @@ tags:
 layout: coverflow
 primaryUse: Product/Item Showcase
 responsive: true
-description: 
-  A responsive coverflow-style slider for showcasing products, items, or images. Features smooth transitions, navigation buttons, and touch/drag support. Built with Tailwind CSS and custom JS for a modern, interactive experience. Ideal for landing pages, portfolios, or e-commerce highlights.
+description: A responsive coverflow-style slider for showcasing products, items, or images. Features smooth transitions, navigation buttons, and touch/drag support. Built with Tailwind CSS and custom JS for a modern, interactive experience. Ideal for landing pages, portfolios, or e-commerce highlights.
 uses: landing and dashboard
-
 ```
+
 ---

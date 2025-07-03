@@ -1,21 +1,22 @@
 ```yaml
 componentName: Featues Basic
-slug: features-features-basic
-category: Features
+slug: features-basic
+category: features
 tags:
   - features
 layout: basic
 primaryUse: Features Display
 responsive: true
-description: 
-  A clean and modern features/services section displaying multiple cards, each with an icon, title, and description. Fully responsive and ideal for showcasing offerings or key features of a product or business. 
+description: A clean and modern features/services section displaying multiple cards, each with an icon, title, and description. Fully responsive and ideal for showcasing offerings or key features of a product or business.
 uses: landing
 ```
+
 ---
+
 ```yaml
 componentName: Features Grid
-slug: features-features-grid
-category: Features
+slug: features-grid
+category: features
 tags:
   - features
   - grid
@@ -28,15 +29,16 @@ keywords:
   - figma:features
   - grid
   - cards
-description: 
-  A grid layout features section with cards for each feature. Responsive, modern, and suitable for displaying multiple features in a structured way. 
+description: A grid layout features section with cards for each feature. Responsive, modern, and suitable for displaying multiple features in a structured way.
 uses: landing
 ```
+
 ---
+
 ```yaml
 componentName: Features Icons
-slug: features-features-icon
-category: Features
+slug: features-icon
+category: features
 tags:
   - features
   - icons
@@ -49,15 +51,16 @@ keywords:
   - figma:features
   - icons
   - cards
-description: 
-  A features section displaying features as cards with icons, titles, and descriptions. Clean, modern, and suitable for quick feature overviews. 
+description: A features section displaying features as cards with icons, titles, and descriptions. Clean, modern, and suitable for quick feature overviews.
 uses: landing
 ```
+
 ---
+
 ```yaml
 componentName: Features Tabs
-slug: features-features-tab
-category: Features
+slug: features-tab
+category: features
 tags:
   - features
   - tabs
@@ -70,15 +73,16 @@ keywords:
   - figma:features
   - tabs
   - interactive
-description: 
-  A features section with tabbed navigation to switch between different feature sets. Interactive, modern, and suitable for showcasing multiple product features. 
+description: A features section with tabbed navigation to switch between different feature sets. Interactive, modern, and suitable for showcasing multiple product features.
 uses: landing
 ```
+
 ---
+
 ```yaml
 componentName: Features Zigzag
-slug: features-features-zigzag
-category: Features
+slug: features-zigzag
+category: features
 tags:
   - features
   - zigzag
@@ -91,10 +95,8 @@ keywords:
   - figma:features
   - zigzag
   - alternating
-description: 
-  A features section with alternating (zigzag) image and text layout. Modern, responsive, and visually engaging for product or service highlights. 
+description: A features section with alternating (zigzag) image and text layout. Modern, responsive, and visually engaging for product or service highlights.
 uses: landing
 ```
+
 ---
-
-

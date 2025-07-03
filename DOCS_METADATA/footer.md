@@ -1,7 +1,7 @@
 ```yaml
 componentName: Footer Columns
-slug: footer-footer-column
-category: Footer
+slug: footer-column
+category: footer
 tags:
   - footer
   - columns
@@ -11,15 +11,16 @@ tags:
 layout: multi-column, navigation
 primaryUse: Footer
 responsive: true
-description: 
-  A footer with multiple columns for navigation links, logo, and optional description. Suitable for content-rich or corporate sites. 
-uses: landing 
+description: A footer with multiple columns for navigation links, logo, and optional description. Suitable for content-rich or corporate sites.
+uses: landing
 ```
+
 ---
+
 ```yaml
 componentName: Footer Dark Theme
-slug: footer-footer-dark-theme
-category: Footer
+slug: footer-dark-theme
+category: footer
 tags:
   - footer
   - dark
@@ -29,15 +30,16 @@ tags:
 layout: single-row, dark
 primaryUse: Footer
 responsive: true
-description:
-  A dark-themed footer with logo, copyright, and minimal navigation. Suitable for modern, dark-mode landing pages. 
-uses: landing 
+description: A dark-themed footer with logo, copyright, and minimal navigation. Suitable for modern, dark-mode landing pages.
+uses: landing
 ```
+
 ---
+
 ```yaml
 componentName: Footer Minimal
-slug: footer-footer-minimal
-category: Footer
+slug: footer-minimal
+category: footer
 tags:
   - footer
   - minimal
@@ -48,15 +50,16 @@ tags:
 layout: single-row, centered
 primaryUse: Footer
 responsive: true
-description: 
-  A minimal footer with centered logo and copyright, no columns or social links. Clean, subtle, and suitable for simple landing pages. 
+description: A minimal footer with centered logo and copyright, no columns or social links. Clean, subtle, and suitable for simple landing pages.
 uses: landing
 ```
+
 ---
+
 ```yaml
 componentName: Footer With Socials
-slug: footer-footer-with-socials
-category: Footer
+slug: footer-with-socials
+category: footer
 tags:
   - footer
   - social
@@ -66,10 +69,8 @@ tags:
 layout: single-row, centered, socials
 primaryUse: Footer
 responsive: true
-description: 
-  A footer with logo, description, and a row of social icons. No columns or navigation links. Modern and suitable for brand-focused sites. 
-uses: landing 
+description: A footer with logo, description, and a row of social icons. No columns or navigation links. Modern and suitable for brand-focused sites.
+uses: landing
 ```
+
 ---
-
-

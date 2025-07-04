@@ -17,4 +17,8 @@ slider
 subscribe-newsletter
 testimonials
 topbar-header
+analytics-insights
+market-data
+trade
+
 

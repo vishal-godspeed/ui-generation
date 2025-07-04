@@ -1,0 +1,22 @@
+<section class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 max-w-lg w-full mx-auto transition-colors duration-300">
+    <div class="flex items-center justify-between mb-6">
+      <h3 class="text-lg font-bold text-gray-900 dark:text-white">Order Book</h3>
+      <span class="text-xs text-gray-500 dark:text-gray-400">Live</span>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
+      <div>
+        <h4 class="font-semibold mb-2 flex items-center text-green-600 dark:text-green-400">Bids <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg></h4>
+        <ul id="order-book-bids" class="space-y-1">
+          <!-- Bids will be rendered here by JS -->
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2 flex items-center text-red-600 dark:text-red-400">Asks <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg></h4>
+        <ul id="order-book-asks" class="space-y-1">
+          <!-- Asks will be rendered here by JS -->
+        </ul>
+      </div>
+    </div>
+  </section>
+  <script src="order-book.js"></script>
+  <script src="https://unpkg.com/heroicons@2.0.16/dist/heroicons.min.js"></script>

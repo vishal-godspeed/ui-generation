@@ -1,0 +1,57 @@
+<div class="min-h-screen flex items-center justify-center bg-dark">
+  <div class="w-full max-w-5xl mx-auto flex rounded-3xl overflow-hidden shadow-2xl border border-zinc-800 bg-zinc-900">
+    <!-- Left: Gradient panel -->
+    <div class="hidden md:flex flex-col justify-center items-center w-1/2 bg-gradient-to-b from-purple-400/80 via-purple-700/80 to-black/90 p-12 relative">
+      <div class="absolute inset-0 rounded-3xl pointer-events-none" style="box-shadow: 0 0 80px 10px #a78bfa44;"></div>
+      <div class="relative z-10 flex flex-col items-center text-center">
+        <div class="mb-6">
+          <span class="inline-block w-3 h-3 bg-white rounded-full mr-2 align-middle"></span>
+          <span class="text-lg font-semibold tracking-wide text-white/90">OnlyPipe</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-2">Get Started with Us</h2>
+        <p class="text-zinc-200/80 mb-10 max-w-xs">Complete these easy steps to register your account.</p>
+        <div class="space-y-3 w-full max-w-xs">
+          <div class="flex items-center">
+            <div class="w-8 h-8 flex items-center justify-center rounded-full bg-white text-black font-bold mr-4">1</div>
+            <span class="text-white font-medium">Sign up your account</span>
+          </div>
+          <div class="flex items-center opacity-60">
+            <div class="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-700 text-white font-bold mr-4">2</div>
+            <span class="text-white">Set up your workspace</span>
+          </div>
+          <div class="flex items-center opacity-60">
+            <div class="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-700 text-white font-bold mr-4">3</div>
+            <span class="text-white">Set up your profile</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right: Form panel -->
+    <div class="flex-1 flex flex-col justify-center p-8 md:p-14 bg-zinc-950">
+      <h2 class="text-2xl font-heading font-bold text-white mb-2">Sign Up Account</h2>
+      <p class="text-zinc-400 mb-6">Enter your personal data to create your account.</p>
+      <div class="flex space-x-4 mb-6">
+        <button class="flex-1 btn bg-white text-black flex items-center justify-center gap-2 shadow hover:bg-zinc-100"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M21.805 10.023h-9.765v3.954h5.617c-.242 1.242-1.484 3.648-5.617 3.648-3.375 0-6.125-2.789-6.125-6.125s2.75-6.125 6.125-6.125c1.922 0 3.211.82 3.953 1.523l2.703-2.633c-1.703-1.57-3.891-2.539-6.656-2.539-5.523 0-10 4.477-10 10s4.477 10 10 10c5.773 0 9.594-4.055 9.594-9.773 0-.656-.07-1.156-.156-1.563z"/></svg>Google</button>
+        <button class="flex-1 btn bg-zinc-800 text-white flex items-center justify-center gap-2 shadow hover:bg-zinc-700"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.877v-6.987h-2.54v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z"/></svg>Github</button>
+      </div>
+      <div class="flex items-center mb-6">
+        <div class="flex-1 h-px bg-zinc-700"></div>
+        <span class="px-3 text-zinc-500 text-sm">Or</span>
+        <div class="flex-1 h-px bg-zinc-700"></div>
+      </div>
+      <form class="space-y-4">
+        <div class="flex space-x-4">
+          <input type="text" placeholder="eg. John" class="flex-1 rounded-md p-3 bg-zinc-800 text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-primary-500" />
+          <input type="text" placeholder="eg. Francisco" class="flex-1 rounded-md p-3 bg-zinc-800 text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-primary-500" />
+        </div>
+        <input type="email" placeholder="eg. johnfrans@gmail.com" class="w-full rounded-md p-3 bg-zinc-800 text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-primary-500" />
+        <div>
+          <input type="password" placeholder="Enter your password" class="w-full rounded-md p-3 bg-zinc-800 text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-primary-500 pr-12" />
+          <span class="block text-xs text-zinc-500 mt-1">Must be at least 8 characters.</span>
+        </div>
+        <button type="submit" class="btn w-full mt-2">Sign Up</button>
+      </form>
+      <p class="text-zinc-400 text-center mt-6">Already have an account? <a href="#" class="text-white underline">Log in</a></p>
+    </div>
+  </div>
+</div>

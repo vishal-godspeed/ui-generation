@@ -1,0 +1,118 @@
+import React, { useState } from 'react';
+
+interface Testimonial {
+  id: string;
+  text: string;
+  author: {
+    name: string;
+    role: string;
+    avatar: string;
+  };
+  rating: number;
+}
+
+interface TestimonialsSliderProps {
+  title?: string;
+  testimonials?: Testimonial[];
+}
+
+const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
+  title = 'What Our Users Say',
+  testimonials = [
+    {
+      id: '1',
+      text: 'Xultions is a platform designed to help you build beautiful landing pages with ease, using modern UI components and best practices.',
+      author: {
+        name: 'Alex Carter',
+        role: 'Product Designer, Xultions',
+        avatar: '/images/image4.jpeg'
+      },
+      rating: 5
+    },
+    {
+      id: '2',
+      text: 'Simply sign up for a free trial, choose a template, and start customizing your landing page. No coding skills required!',
+      author: {
+        name: 'Sara Lee',
+        role: 'UI Engineer, Xultions',
+        avatar: '/images/image5.jpeg'
+      },
+      rating: 5
+    },
+    {
+      id: '3',
+      text: 'Yes, we offer a free plan with basic features so you can try out Xultions before upgrading to a premium plan.',
+      author: {
+        name: 'John Doe',
+        role: 'Frontend Dev, Xultions',
+        avatar: '/images/image6.avif'
+      },
+      rating: 5
+    }
+  ]
+}) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const renderStars = (rating: number) => {
+    return '★'.repeat(rating);
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-indigo-400/40 via-blue-300/40 to-purple-300/40">
+      <section className="w-full max-w-xl mx-auto px-4 py-16">
+        <h2 className="text-4xl sm:text-5xl font-bold text-center text-gray-900 mb-10">{title}</h2>
+        <div className="relative">
+          <div className="overflow-hidden">
+            {/* Slides */}
+            {testimonials.map((testimonial, index) => (
+              <div 
+                key={testimonial.id} 
+                className={`testimonial-slide ${index !== currentSlide ? 'hidden' : ''}`}
+              >
+                <div className="rounded-2xl shadow-lg p-8 border border-white/20 bg-gradient-to-br from-indigo-400/60 via-blue-300/60 to-purple-300/60 backdrop-blur-md flex flex-col items-center text-center">
+                  <div className="flex items-center mb-3 justify-center">
+                    <span className="flex text-yellow-400">{renderStars(testimonial.rating)}</span>
+                  </div>
+                  <p className="text-gray-800 text-base leading-relaxed mb-6">
+                    {testimonial.text}
+                  </p>
+                  <div className="flex items-center justify-center mt-4">
+                    <img 
+                      src={testimonial.author.avatar} 
+                      alt={testimonial.author.name} 
+                      className="w-10 h-10 rounded-full border-2 border-white shadow mr-3"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.onerror = null;
+                        target.src = 'https://via.placeholder.com/40';
+                      }}
+                    />
+                    <div className="text-left">
+                      <div className="font-semibold text-gray-900 text-sm">{testimonial.author.name}</div>
+                      <div className="text-gray-700 text-xs">{testimonial.author.role}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          {/* Slider Dots */}
+          <div className="flex justify-center gap-2 mt-6">
+            {testimonials.map((_, index) => (
+              <button 
+                key={index}
+                className={`slider-dot w-3 h-3 rounded-full ${
+                  index === currentSlide ? 'bg-pink-400' : 'bg-gray-300'
+                }`}
+                onClick={() => setCurrentSlide(index)}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default TestimonialsSlider;

@@ -1,11 +1,13 @@
 ```yaml
-componentName: Visual Styling
-slug: gradient-bg
+componentName: GradientBg
+filename: atoms/godspeed-comp/visual-styling/gradient-bg.tsx
 category: visual, styling, backgrounds
-layout: gradient, divider, shadow, border
-primaryUse: Enhancing visual style and separation in UI.
+layout: gradient, container
+primaryUse: Provides a customizable gradient background wrapper for UI elements.
 responsive: true
-description: Atomic components for visual styling, including gradients, dividers, shadows, and borders. Designed for modern, beautiful, and accessible UI.
-uses: cards, sections, layouts 
+description: A flexible container component that applies a gradient background and optional rounded corners to its children, enhancing visual appeal.
+uses: cards, sections, hero blocks, banners
+dependencies: [react]
+devDependencies: [typescript]
 ```
--------
+---

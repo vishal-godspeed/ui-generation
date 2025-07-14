@@ -1,10 +1,13 @@
 ```yaml
-componentName: Media & Identity
-slug: avatar-with-ring
+componentName: AvatarWithRing
+filename: atoms/godspeed-comp/media-identity/avatar-with-ring.tsx
 category: media, identity, avatar, image
-layout: avatar, image, logo, icon
-primaryUse: Displaying user identity, media, and branding visuals.
+layout: avatar, flex
+primaryUse: Displays a user avatar with a colorful ring for emphasis or status.
 responsive: true
-description: Atomic components for avatars, images, logos, and icons, supporting user identity, branding, and media display. Designed for accessibility and visual clarity.
-uses: profiles, cards, navigation, branding
-``` 
+description: A circular avatar component with a customizable gradient ring, ideal for highlighting user identity or status in profiles and cards.
+uses: profiles, cards, user lists, teams
+dependencies: [react]
+devDependencies: [typescript]
+```
+--- 

@@ -1,6 +1,6 @@
 ```yaml
 componentName: Testimonials Cards
-slug: testimonials-cards
+filename: DOCS_METADATA/molecules/godspeed-comp/testimonials-cards
 category: testimonials
 tags:
   - testimonials
@@ -13,13 +13,13 @@ primaryUse: Testimonials
 responsive: true
 description: A grid of testimonial cards, each with stars, quote, author image, name, and role. Responsive, modern, and suitable for displaying multiple user reviews.
 uses: landing
+dependencies: [react]
+devDependencies: [typescript]
 ```
-
 ---
-
 ```yaml
 componentName: Testimonials quote
-slug: testimonials-testimonials-quote
+filename: DOCS_METADATA/molecules/godspeed-comp/testimonials-quote
 name: Quote
 category: Testimonial
 tags:
@@ -27,13 +27,13 @@ tags:
   - quote
 description: A single, large testimonial quote with stars, author image, name, and role. Centered, bold, and ideal for hero or highlight sections.
 uses: landing
+dependencies: [react]
+devDependencies: [typescript]
 ```
-
 ---
-
 ```yaml
 componentName: Testimonials Slider
-slug: testimonials-slider
+filename: DOCS_METADATA/molecules/godspeed-comp/testimonials-slider
 category: testimonials
 tags:
   - testimonials
@@ -46,13 +46,13 @@ primaryUse: Testimonials
 responsive: true
 description: A testimonial slider showing one testimonial at a time with navigation dots. Modern, responsive, and suitable for highlighting user feedback in a dynamic way.
 uses: landing and dashboard
+dependencies: [react]
+devDependencies: [typescript]
 ```
-
 ---
-
 ```yaml
 componentName: Testimonials
-slug: testimonials
+filename: DOCS_METADATA/molecules/godspeed-comp/testimonials
 category: testimonials
 tags:
   - testimonials
@@ -61,6 +61,7 @@ primaryUse: Testimonials Display
 responsive: true
 description: A modern testimonials and FAQ section featuring user feedback cards with ratings, profile images, and roles. The layout is responsive, visually engaging, and ideal for showcasing customer experiences and answering common questions.
 uses: landing
+dependencies: [react]
+devDependencies: [typescript]
 ```
-
 ---

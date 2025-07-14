@@ -1,6 +1,6 @@
 ```yaml
 componentName: Profile Card
-slug: profile-card
+filename: DOCS_METADATA/molecules/godspeed-comp/profile-card
 category: cards
 tags:
   - profile
@@ -15,13 +15,13 @@ description:
   A modern profile card with user image, name, role, and optional social links or actions.
   Suitable for team, testimonial, or author sections.
 uses: landing and dashboard
+dependencies: [react]
+devDependencies: [typescript]
 ```
-
 ---
-
 ```yaml
 componentName: service-card
-slug: service-card
+filename: DOCS_METADATA/molecules/godspeed-comp/service-card
 category: cards
 tags:
   - service
@@ -38,6 +38,7 @@ description:
   service details, location, schedule, and a booking button. Designed with Tailwind CSS
   and custom styles for a clean, professional look.
 uses: landing
+dependencies: [react]
+devDependencies: [typescript]
 ```
-
 ---

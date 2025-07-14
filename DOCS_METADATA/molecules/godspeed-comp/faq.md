@@ -1,6 +1,6 @@
 ```yaml
 componentName: FAQ Accordion
-slug: faq-accordin
+filename: DOCS_METADATA/molecules/godspeed-comp/faq-accordin
 category: faq
 tags:
   - faq
@@ -14,13 +14,13 @@ primaryUse: FAQ Section
 responsive: true
 description: "A single-column FAQ section with collapsible accordion items for each question and answer. Modern, interactive, and space-saving."
 uses: landing and dashboard
+dependencies: [react]
+devDependencies: [typescript]
 ```
-
 ---
-
 ```yaml
 componentName: FAQ Cards
-slug: faq-cards
+filename: DOCS_METADATA/molecules/godspeed-comp/faq-cards
 category: faq
 tags:
   - faq
@@ -33,13 +33,13 @@ primaryUse: FAQ Section
 responsive: true
 description: A single-column stack of FAQ cards, each with a question and answer. Clean, modern, and suitable for focused FAQ sections.
 uses: landing and dashboard
+dependencies: [react]
+devDependencies: [typescript]
 ```
-
 ---
-
 ```yaml
 componentName: FAQ Columns
-slug: faq-columns
+filename: DOCS_METADATA/molecules/godspeed-comp/faq-columns
 category: faq
 tags:
   - faq
@@ -54,13 +54,13 @@ primaryUse: FAQ Section
 responsive: true
 description: A multi-column FAQ section displaying questions and answers in card format. Responsive, modern, and ideal for dense information layouts.
 uses: landing and dashboard
+dependencies: [react]
+devDependencies: [typescript]
 ```
-
 ---
-
 ```yaml
 componentName: FAQ Categories
-slug: faq
+filename: DOCS_METADATA/molecules/godspeed-comp/faq
 category: faq
 tags:
   - faq
@@ -74,6 +74,7 @@ primaryUse: FAQ Section
 responsive: true
 description: A FAQ section with a sidebar for categories and a main area for questions. Responsive, modern, and suitable for knowledge base or help center layouts.
 uses: landing and dashboard
+dependencies: [react]
+devDependencies: [typescript]
 ```
-
 ---

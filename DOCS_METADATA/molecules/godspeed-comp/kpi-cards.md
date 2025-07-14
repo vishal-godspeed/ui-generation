@@ -1,6 +1,6 @@
 ```yaml
 componentName: Area Chart
-slug: area-chart
+filename: DOCS_METADATA/molecules/godspeed-comp/area-chart
 category: kpi-cards
 tags:
   - kpi
@@ -8,13 +8,13 @@ tags:
   - area
 description: An area chart KPI card visualizing activity and sales statistics over time, with selectable ranges. Clean, interactive, and ideal for dashboards or analytics pages.
 uses: dashboard
+dependencies: [react]
+devDependencies: [typescript]
 ```
-
 ---
-
 ```yaml
 componentName: Bar Chart
-slug: bar-chart
+filename: DOCS_METADATA/molecules/godspeed-comp/bar-chart
 category: kpi-cards
 tags:
   - kpi
@@ -24,13 +24,13 @@ layout: kpi, chart, bar
 primaryUse: KPI Chart Display
 responsive: true
 description: A bar chart KPI card visualizing activity and sales statistics over time, with selectable ranges. Clean, interactive, and ideal for dashboards or analytics pages.
+dependencies: [react]
+devDependencies: [typescript]
 ```
-
 ---
-
 ```yaml
 componentName: Bubble Chart
-slug: bubble-chart
+filename: DOCS_METADATA/molecules/godspeed-comp/bubble-chart
 category: kpi-cards
 tags:
   - kpi
@@ -41,13 +41,13 @@ primaryUse: KPI Chart Display
 responsive: true
 description: A bubble chart KPI card visualizing activity and sales statistics over selectable time ranges. Interactive, responsive, and ideal for dashboards or analytics pages.
 uses: dashboard
+dependencies: [react]
+devDependencies: [typescript]
 ```
-
 ---
-
 ```yaml
 componentName: Line Chart
-slug: line-chart
+filename: DOCS_METADATA/molecules/godspeed-comp/line-chart
 category: kpi-cards
 tags:
   - kpi
@@ -58,13 +58,13 @@ primaryUse: KPI Chart Display
 responsive: true
 description: A line chart KPI card visualizing activity and sales statistics over time, with selectable ranges. Clean, interactive, and ideal for dashboards or analytics pages.
 uses: dashboard
+dependencies: [react]
+devDependencies: [typescript]
 ```
-
 ---
-
-````yaml
+```yaml
 componentName: Pie Chart
-slug: pie-chart
+filename: DOCS_METADATA/molecules/godspeed-comp/pie-chart
 category: kpi-card
 tags:
   - kpi
@@ -73,13 +73,15 @@ tags:
 layout: kpi, chart, pie
 primaryUse: KPI Chart Display
 responsive: true
-description:
-  A pie chart KPI card for visualizing proportions or categories in a dataset. Ideal for dashboards or analytics pages.
+description: A pie chart KPI card for visualizing proportions or categories in a dataset. Ideal for dashboards or analytics pages.
 uses: dashboard
+dependencies: [react]
+devDependencies: [typescript]
+```
 ---
 ```yaml
 componentName: Radar Chart
-slug: radar-chart
+filename: DOCS_METADATA/molecules/godspeed-comp/radar-chart
 category: kpi-cards
 tags:
   - kpi
@@ -88,16 +90,15 @@ tags:
 layout: kpi, chart, radar
 primaryUse: KPI Chart Display
 responsive: true
-description:
-  A radar chart KPI card visualizing activity and sales statistics across multiple categories or time periods. Interactive, responsive, and perfect for dashboards or analytics.
+description: A radar chart KPI card visualizing activity and sales statistics across multiple categories or time periods. Interactive, responsive, and perfect for dashboards or analytics.
 uses: dashboard
-````
-
+dependencies: [react]
+devDependencies: [typescript]
+```
 ---
-
 ```yaml
 componentName: Scatter Chart
-slug: scatter-chart
+filename: DOCS_METADATA/molecules/godspeed-comp/scatter-chart
 category: kpi-cards
 tags:
   - kpi
@@ -108,5 +109,7 @@ primaryUse: KPI Chart Display
 responsive: true
 description: A scatter chart KPI card visualizing activity and sales statistics over selectable time ranges. Interactive, responsive, and ideal for dashboards or analytics pages.
 uses: dashboard
----
+dependencies: [react]
+devDependencies: [typescript]
 ```
+---

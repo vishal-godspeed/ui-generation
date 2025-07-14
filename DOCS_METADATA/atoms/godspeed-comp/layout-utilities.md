@@ -1,11 +1,13 @@
 ```yaml
-componentName: Layout Utilities
-slug: section-divider
+componentName: SectionDivider
+filename: atoms/godspeed-comp/layout-utilities/section-divider.tsx
 category: layout, utilities, spacing
-layout: flex, grid, container, spacer
-primaryUse: Structuring and spacing UI content at the atomic level.
+layout: flex
+primaryUse: Visually separates content sections with an optional label and icon.
 responsive: true
-description: Atomic layout utility components for flex, grid, container, and spacing. Designed for flexibility, responsiveness, and beautiful UI with Tailwind CSS.
-uses: layouts, dashboards, cards
+description: A flexible, responsive divider component for segmenting UI sections, supporting optional labels and icons for enhanced clarity.
+uses: layouts, dashboards, forms, cards
+dependencies: [react]
+devDependencies: [typescript]
 ```
 --- 

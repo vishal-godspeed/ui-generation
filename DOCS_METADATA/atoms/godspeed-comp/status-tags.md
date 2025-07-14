@@ -1,11 +1,13 @@
 ```yaml
-componentName: Status & Tags
-slug: label-pill
+componentName: LabelPill
+filename: atoms/godspeed-comp/status-tags/label-pill.tsx
 category: status, tags, indicators
-layout: badge, chip, tag, alert
-primaryUse: Displaying status, tags, and quick indicators.
+layout: inline, flex
+primaryUse: Displays a pill-shaped label for status, tags, or quick indicators, with optional icon and color.
 responsive: true
-description: Atomic components for status, tags, badges, and quick indicators. Designed for clarity, accessibility, and beautiful UI with Tailwind CSS.
-uses: notifications, dashboards, lists 
+description: A compact, rounded label component for showing statuses, tags, or quick indicators, supporting custom colors and icons.
+uses: notifications, dashboards, lists, filters
+dependencies: [react]
+devDependencies: [typescript]
 ```
------
+---

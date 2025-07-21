@@ -1,0 +1,85 @@
+{
+  "component": {
+    "id": "string",                             // Unique identifier
+    "name": "string",                           // e.g., "LoginButton", "Header"
+    "type": "Page | Section | Component | Button | Text | Input | Image | Icon | Media | Card | Widget | Navigation | Divider | Table | TableCell | Form | Unknown",
+    "position": {
+      "x": "number",
+      "y": "number"
+    },
+    "size": {
+      "width": "number",
+      "height": "number"
+    },
+    "style": {
+      "fontFamily": "string",
+      "fontSize": "number",
+      "fontWeight": "string | number",
+      "lineHeight": "number",
+      "letterSpacing": "number",
+      "color": "string",                       // e.g., "#000000"
+      "background": "string",                  // e.g., "#ffffff"
+      "borderRadius": "number",
+      "borderWidth": "number",
+      "borderColor": "string",
+      "boxShadow": "string",
+      "padding": "string | { top: number, right: number, bottom: number, left: number }",
+      "margin": "string | { top: number, right: number, bottom: number, left: number }",
+      "opacity": "number",
+      "layoutMode": "HORIZONTAL | VERTICAL | FREE",
+      "constraints": {
+        "top": "boolean",
+        "bottom": "boolean",
+        "left": "boolean",
+        "right": "boolean",
+        "center": "boolean",
+        "scale": "boolean"
+      }
+    },
+    "text": {
+      "content": "string",
+      "alignment": "left | center | right | justify",
+      "wrap": "boolean",
+      "textTransform": "none | uppercase | lowercase | capitalize",
+      "overflow": "clip | ellipsis | visible"
+    },
+    "componentSet": "boolean",                 // If it belongs to a component/variant set
+    "props": {
+      "dataSource": "API | local | static",
+      "propsObject": {
+        "key": "value"                         // Arbitrary key-value props
+      }
+    },
+    "responsive": {
+      "xs": {
+        "styleOverrides": {}
+      },
+      "sm": {
+        "styleOverrides": {}
+      },
+      "md": {
+        "styleOverrides": {}
+      },
+      "lg": {
+        "styleOverrides": {}
+      },
+      "xl": {
+        "styleOverrides": {}
+      }
+    },
+    "children": [                              // Nested components
+      "component"
+    ],
+    "meta": {
+      "routePath": "/home | /login | /about",
+      "className": "string",
+      "hooks": ["useState", "useEffect", "customHookName"],
+      "events": {
+        "onClick": "functionName | action",
+        "onChange": "functionName",
+        "onSubmit": "functionName"
+      },
+      "componentName": "Button/Primary | Text/H1 | Card/Featured"
+    }
+  }
+}

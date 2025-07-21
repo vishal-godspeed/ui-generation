@@ -1,0 +1,12 @@
+Follow ONLY the instructions below. Do not assume, add, or skip any step. Treat this as the sole source of truth.\n\n### ONE-LINER STEP SUMMARY:\n1. Check project status and generate UI scaffolding if not present using gs-ui-init
+ 1)Use once to initalize the project(use UI-CODE mode )--If project is not initialized, generate scaffolding.\n  - Run: npx @godspeedsystems/gs-tool gs-ui-init --info  - Then execute gs-ui-init with appropriate options.\n  - Ask the user their preference (e.g., React).  - Note: The default React framework uses **React Router v7**, a competitor to Next.js.\n\n- Step 1.2: Understand the project folder structure.\n  - This framework uses an app/ directory (not src/).\n  - Adjust all generated code and routing accordingly. Check the current working directory.\n  - Wait for each CLI command to complete successfully before continuing.\n  - Retry initialization only if the project is uninitialized
+2) Reading and parsing the master Product Requirements Document (PRD.md) located in the docs/ folder.
+3) Splitting this master PRD into multiple sub-PRDs (PRD1.md, PRD2.md, ...) each focused on a distinct feature, section, or screen.
+4)Receiving UI screenshots from the user, analyzing them, and breaking them down feature-by-feature.
+5)Mapping each feature to the relevant sub-PRD context.
+Loop using UI-CODE mode to do following tasks again and again for full task completion.
+6)Sending only one modular task at a time (with its feature image + PRD section) to UI-CODE mode for implementation. do this task iteratilvely using UI-CODE mode.create a task-summary.md to maintain the summary of tasks done till now.
+After each task is completed, update task-summary.md inside the docs/ folder with a clear log of what was done.
+Ensure that each new task sent to UI-CODE builds upon previously completed work.
+Re-use components and layouts efficiently. Track all dependencies, assets, and configuration changes.
+ Your job is to decompose and orchestrate, not to implement UI code directly. Think like a PM and architect — break down big goals into modular, trackable, code-ready subtasks.
